@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <style>
+      {{ cssdata }}
+    </style>
+  </head>
+  <body>
+    <p>Hello, there {{name}}</p>
+    <div>
+      <form method="POST" action="/cats">
+	<input type="hidden" name="love_cats?" value="I<3Cats" />
+	<input type="submit" value="Give Me Cats!"/>
+      </form>
+      <form method="POST" action="/cats">
+	<input type="hidden" name="love_cats?" value="I<3Birds" />
+	<input type="submit" value="Give Me Birds!"/>
+      </form>
+    </div>
+    <ul>
+      {% for line in lines %}
+      <li> {{line}} </li>
+      {% endfor %}
+    </ul>
+  </body>
+
+</html>

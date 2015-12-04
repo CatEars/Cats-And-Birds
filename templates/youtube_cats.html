@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <style>
+      {{ cssdata }}
+    </style>
+  </head>
+  <body>
+    {% if ids|length > 0 %}
+    <iframe width="100%" height="95%" 
+	    src="http://www.youtube.com/embed/{{ids[0]}}?autoplay=1">
+    </iframe> 
+    {% else %}
+    <p>No cat videos were found...</p>
+    {% endif %}
+
+    <p>Hello, there {{name}}</p>
+    <form method="POST" action="/cats">
+      <input type="hidden" name="love_cats?" value="I<3Cats" />
+      <input type="submit" value="More Cats!"/>
+    </form>
+    <form method="POST" action="/cats">
+      <input type="hidden" name="love_cats?" value="I<3Birds" />
+      <input type="submit" value="More Birds!"/>
+    </form>
+  </body>
+
+</html>
