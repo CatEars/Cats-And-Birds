@@ -1,7 +1,7 @@
 BeautifulSoup==3.2.1
 Cython==0.20.1post0
 Django==1.8.5
-Flask==0.10.1
+Flask==1.0
 Jinja2==2.7.3
 Mako==0.9.1
 Markdown==2.4.1
