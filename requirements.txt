@@ -7,7 +7,7 @@ Mako==0.9.1
 Markdown==2.4.1
 MarkupSafe==0.23
 PAM==0.4.2
-Pillow==2.3.0
+Pillow==6.2.0
 Pygments==1.6
 Twisted-Core==13.2.0
 Twisted-Names==13.2.0
